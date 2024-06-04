@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em diferentes despositivos ou simplemente aumente e diminua o tamanho da tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Audío</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/so-sweet.mp3" type="audio/mpeg">
+        <source src="midia/so-sweet.ogg" type="audio/ogg">
+        <source src="midia/so-sweet.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não tem suporte para audío. <a href="midia/so-sweet.mp3" download="so-sweet.mp3" type="audio/mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
