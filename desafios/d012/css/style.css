@@ -38,37 +38,62 @@ section {
     padding: 10px;
 }
 
+.dobro {
+    height: 1200px;
+}
+
 #img01 {
     height: 600px;
     color: white;
-    background-image: url(imagens/background001.jpg);
+    background-image: url(../imagens/background001.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-#img01 p {
-    background-color: rgba(0, 0, 0, 0.300);
-}
-
-#img02 p {
-    background-color: rgba(0, 0, 0, 0.300);
 }
 
 #img02 {
     height: 600px;
     color: white;
-    background-image: url(imagens/background002.jpg);
+    background-image: url(../imagens/background002.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-    
+section p {
+    font-size: 3vh;
+    margin: 50px 30px;
+    padding: 10px;
+}
+
+#img01 p {
+    background-color: rgba(0, 0, 0, 0.300);
+    font-size: 3vh;
+    margin: 50px 30px;
+    padding: 10px;
+}
+
+#img02 p {
+    background-color: rgba(0, 0, 0, 0.300);
+    font-size: 3vh;
+    margin: 50px 30px;
+    padding: 10px;
+}
+
 footer {
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+footer a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
