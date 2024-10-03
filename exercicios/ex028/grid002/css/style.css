@@ -10,8 +10,8 @@
 .container {
     /*Torna o container grid*/
     display: grid;
-    /*Duas colunas com 1 fração cada*/
-    grid-template-columns: 1fr 1fr 1fr; 
+    /*Três columas com o mínimo de 100px e o máximo de 400px*/
+    grid-template-columns: repeat(3, minmax(100px, 400px)); 
     /*Quatro linhas com o mesmo tamanho*/
     grid-template-rows: repeat(4, 200px); 
     /*Espaçamento entre os itens*/
@@ -20,10 +20,4 @@
 
 .item {
     background-color: lightskyblue;
-}
-
-#item-a {
-    /*O item ocupa da primera a última posição */
-    grid-column: 1 / -1;
-    text-align: center;
 }
