@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    & p {
+        text-align: center;
+        color: white;
+    }
+}
+
+#rotateX {
+    /*roda o elemento em torno do eixo X*/
+    transform: rotateX(45deg);
+}
+
+#rotateY {
+    /*roda o elemento em torno do eixo Y*/
+    transform: rotateY(45deg);
+}
+
+#rotateZ {
+    /*roda o elemento em torno do eixo Z*/
+    transform: rotateZ(45deg);
+}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    & p {
+        text-align: center;
+        color: white;
+    }
+}
+
+#translate {
+    transform: translate(50px, 5px); /*Move o elemento 50px para direita e 5px para baixo*/
+}
+
+#rotate {
+    transform: rotate(90deg); /*Gira o elemento 90 graus em sentido horário*/
+}
+
+#scale {
+    /*Reduz em 50% o tamanho da largura e deixa a altura em tamanho padrão*/
+    transform: scale(0.5, 1);
+    /*O método scaleX e scaleY, são refentes a largura e altura respectivamente*/
+}
+
+#skew {
+    /*Inclina o elemento 20 graus em relação ao eixo X e 20 graus em relação ao eixo Y*/
+    transform: skew(20deg, 20deg);
+}
