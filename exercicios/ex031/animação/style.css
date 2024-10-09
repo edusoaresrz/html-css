@@ -1,0 +1,90 @@
+@charset "UFT-8";
+
+@keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mudar-cor {
+    0% {
+        background-color: lightgray;
+    }
+    100% {
+        background-color: rgb(46, 194, 46);
+    }
+}
+
+@keyframes icone-aparecendo {
+    0% {
+        display: none;
+    }
+    100% {
+        display: flex;
+    }
+}
+
+body {
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bnt-animado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60px;
+    width: 350px;
+
+    border-radius: 0.4rem;
+    border: none;
+
+    background-color: lightgray;
+
+    animation: mudar-cor 400ms ease-in-out 4s;
+    animation-fill-mode: forwards;
+
+    position: relative;
+}
+
+.load {
+    width: 35px;
+    height: 35px;
+
+    border: 2px solid gray;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+
+    animation: rodar 4s linear infinite;
+    /*
+        abreviação para:
+        animation-name
+        animation-duration
+        animation-timing-function
+        animation-delay
+        animation-iteration-count
+        animation-direction
+    */
+}
+
+.icone-check {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+
+    background-color: rgb(46, 194, 46);
+
+    animation-name: icone-aparecendo;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4.5s;
+    animation-fill-mode: backwards;
+}
