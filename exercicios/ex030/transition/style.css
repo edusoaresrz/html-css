@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 1s, height 1s, transform 1s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s;
+    /*
+        podemos fazer as transições por propriedades especificas:
+
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+
+        ou atráves da propriedade transition:
+
+        transition: width 2s linear 1s
+    */
+}
+
+div:hover {
+    width: 300px;
+    height: 200px;
+    text-align: center; 
+    transform: translate(50%);
+}
