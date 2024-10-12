@@ -1,0 +1,45 @@
+/*Variaveis que armazenam cores e outros tipos de configurações*/
+$cor-primaria: rgb(8, 8, 161);
+$cor-secundaria: rgb(44, 129, 207);
+
+@mixin centralizar { /*Funções  que podem ser reutilizadas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: $cor-secundaria;
+    color: white;
+    @include centralizar();
+    
+}
+
+main {
+    background-color: $cor-secundaria;
+    @include centralizar();
+    height: 200px;
+    margin-top: 10px;
+
+    button {
+        width: 150px;
+        height: 50px;
+
+        border-radius: 0.5rem;
+        border: none;
+
+        font-size: 1rem;
+        &:hover {
+            background-color: $cor-primaria;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.25s linear;
+        }
+    }
+}
+
+footer {
+    @extend header;
+    margin-top: 10px;
+}

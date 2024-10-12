@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*Variaveis que armazenam cores e outros tipos de configurações*/
+header, footer {
+  background-color: rgb(44, 129, 207);
+  color: white;
+  /*Funções  que podem ser reutilizadas*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: rgb(44, 129, 207);
+  /*Funções  que podem ser reutilizadas*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 10px;
+}
+main button {
+  width: 150px;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+main button:hover {
+  background-color: rgb(8, 8, 161);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s linear;
+}
+
+footer {
+  margin-top: 10px;
+}/*# sourceMappingURL=index.css.map */
